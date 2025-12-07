@@ -164,7 +164,7 @@ const App: React.FC = () => {
                 display: "grid",
                 gridTemplateColumns:
                   scale === "major" ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
-                gap: "0.3em",
+                gap: "0.1em",
                 width: "100%",
                 margin: "0 5px 5px 5px",
               }}
