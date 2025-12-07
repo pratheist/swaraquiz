@@ -76,7 +76,7 @@ const App: React.FC = () => {
           borderRadius: 32,
           boxShadow: "0 18px 40px rgba(15,23,42,0.65)",
           maxWidth: 500,
-          width: "97vw",
+          width: "96vw",
           padding: "32px 24px 26px 24px",
           display: "flex",
           flexDirection: "column",
@@ -163,10 +163,10 @@ const App: React.FC = () => {
               style={{
                 display: "grid",
                 gridTemplateColumns:
-                  scale === "major" ? "repeat(3, 1fr)" : "repeat(4, 1fr)",
-                gap: "15px",
+                  scale === "major" ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
+                gap: "0.3em",
                 width: "100%",
-                margin: "0 auto 5px auto",
+                margin: "0 5px 5px 5px",
               }}
             >
               {notes.map((btnNote) => (
@@ -203,7 +203,7 @@ const App: React.FC = () => {
                 >
                   <span
                     style={{
-                      fontSize: 15.3,
+                      fontSize: "0.85rem",
                       fontWeight: 650,
                       letterSpacing: ".01em",
                       lineHeight: "1.26",
@@ -273,13 +273,13 @@ const glassAnsBtn: React.CSSProperties = {
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  width: 118,
+  width: 50,
   height: 54,
   borderRadius: 18,
   background: "rgba(15,23,42,0.9)",
   border: "1px solid rgba(148,191,233,0.45)",
   color: "#e5f2ff",
-  fontSize: 15,
+  fontSize: 18,
   fontWeight: 600,
   boxShadow: "0 12px 26px rgba(15,23,42,0.75)",
   cursor: "pointer",
