@@ -9,7 +9,7 @@ export default function WarpShaderBackground({ children }: Props) {
     <main
       style={{
         position: "relative",
-        minHeight: "100dvh", // single key
+        minHeight: "120dvh", // single key
         overflow: "hidden",
       }}
     >
