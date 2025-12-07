@@ -9,8 +9,7 @@ export default function WarpShaderBackground({ children }: Props) {
     <main
       style={{
         position: "relative",
-        minHeight: "100vh",      // desktop
-        minHeight: "100dvh",     // mobile-safe height
+        minHeight: "100dvh", // single key
         overflow: "hidden",
       }}
     >
@@ -45,8 +44,7 @@ export default function WarpShaderBackground({ children }: Props) {
         style={{
           position: "relative",
           zIndex: 10,
-          minHeight: "100vh",
-          minHeight: "100dvh",
+          minHeight: "100dvh", // single key
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
