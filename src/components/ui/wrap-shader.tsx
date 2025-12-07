@@ -1,13 +1,16 @@
+// src/components/ui/wrap-shader.tsx
 import React from "react";
 import { Warp } from "@paper-design/shaders-react";
 
+type Props = { children: React.ReactNode };
 
-export default function WarpShaderBackground({ children }: { children: React.ReactNode }) {
+export default function WarpShaderBackground({ children }: Props) {
   return (
     <main
       style={{
         position: "relative",
-        minHeight: "100vh",
+        minHeight: "100vh",      // desktop
+        minHeight: "100dvh",     // mobile-safe height
         overflow: "hidden",
       }}
     >
@@ -18,7 +21,7 @@ export default function WarpShaderBackground({ children }: { children: React.Rea
         }}
       >
         <Warp
-          style={{ height: "100%", width: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           proportion={0.45}
           softness={1}
           distortion={0.25}
@@ -36,13 +39,14 @@ export default function WarpShaderBackground({ children }: { children: React.Rea
             "hsl(170, 100%, 80%)",
           ]}
         />
-     </div>
+      </div>
 
       <div
         style={{
           position: "relative",
           zIndex: 10,
           minHeight: "100vh",
+          minHeight: "100dvh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
